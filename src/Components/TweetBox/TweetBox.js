@@ -16,10 +16,12 @@ const TweetBox = () => {
         username: user?.email.split("@")[0],
         verified: false,
         text: tweetMsg,
-        image: tweetImg,
+        image: tweetImg ? tweetImg : "",
         avatar: user?.photoURL
       });
     }
+    setTweetMsg("");
+    setTweetImg("");
   };
   return (
     <div className="tweetBox">
