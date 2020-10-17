@@ -1,0 +1,43 @@
+.widgets {
+  overflow-y: scroll;
+  max-width: fit-content;
+  /* hide scrollbar on ie */
+  -ms-overflow-style: none;
+  /* hide scrollbar on firebox */
+  scrollbar-width: none;
+}
+.widgets::-webkit-scrollbar {
+  /* hide scrollbar on chrome */
+  display: none;
+}
+
+.widgets__input {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.widgets__input > input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: var(--twitter-background);
+}
+.widgets__searchIcon {
+  color: gray;
+}
+.widgets__widgetContainer {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f5f8fa;
+}
+@media (max-width: 720px) {
+  .widgets {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
